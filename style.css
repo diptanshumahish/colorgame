@@ -94,11 +94,11 @@ body {
   transform: scale(1);
 }
 .box:hover {
-  transform: scale(1.03);
-  transition: 0.4s ease;
+  transform: scale(1.09);
+  transition: 1.7s ease;
 }
 #win {
-  margin-left: 31%;
+  text-align: center;
   /* display:none; */
   display: block;
   color: white;
@@ -109,7 +109,7 @@ body {
 }
 
 #lose {
-  margin-left: 37%;
+  text-align: center;
   /* display:none; */
   color: white;
   font-size: 35px;
@@ -127,10 +127,21 @@ body {
   letter-spacing: 2px;
   
   font-size: 40px;
-  margin-left: 38%;
+  
+  
   transform:scale(1);
+  
 }
 .play:hover{
-    transform:scale(1.06);
+    color:#151618;
     transition:1s ease all;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#again{
+  margin-left:40%;
+  margin-right:40%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
 }
