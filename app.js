@@ -1,3 +1,6 @@
+document.getElementById("win").style.display="none";
+document.getElementById("lose").style.display="none";
+document.getElementById("again").style.display="none";
 var r = [],
   g = [],
   b = [];
@@ -37,12 +40,19 @@ function setBoxes(x = 3) {
     setColor(x);
   }
   setColor();
+  
 
   function verify(color) {
     if (color == ans) {
-    //   alert("Correct");
-      location.reload();
+      document.getElementById("win").style.display="inline";
+      document.getElementById("again").style.display="block";
+      document.getElementById("lose").style.display="none";
+
     } else {
-      alert("Wrong");
+      document.getElementById("lose").style.display="inline";
+      document.getElementById("win").style.display="none";
+      document.getElementById("again").style.display="none";
+      
     }
-  }   
+  } 
+  
