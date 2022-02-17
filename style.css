@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+body {
+        background: linear-gradient(-45deg, #ee7752, #cc2465, #4a8cd8, #7c4db1);
+        background-size: 400% 400%;
+        animation: gradient 8s ease infinite ;
+        height: 100vh;
+    }
+@keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+ .navbar{
+     margin:10px;
+     text-align:center;
+     color:white;
+     font-weight:2px;
+     font-size:35px;
+     letter-spacing:10px;
+     background-color: #4b132846;
+     border-radius:1rem;
+     margin-bottom:10px;
+     height:20vh;
+
+ }  
+ .mainbar{
+     display:flex;
+     justify-content:space-evenly;
+     background-color: #3f0f2146;
+     border-radius:10px;
+     margin:10px ;
+     height:5vh;
+   
+ } 
+ .rgb{
+     font-weight:bold;
+ }
+
+ .leftText{
+     font-size:30px;
+     background: none;
+	color: white;
+	border: none;
+	padding: 0;
+    cursor: pointer;
+    letter-spacing:2px;
+    font-weight: bold;
+
+ }
+ .leftText:hover{
+     color:rgba(0, 0, 0, 0.623);
+     font-weight: bold;
+     transition: 0.3s ease infinte;
+     
+ }
+ .rightText{
+     font-size:30px;
+     background: none;
+	color: white;
+	border: none;
+	padding: 0;
+    cursor: pointer;
+    font-weight: bold;
+ }
+ .rightText:hover{
+    color:rgba(0, 0, 0, 0.623);
+    font-weight: bold;
+    transition: 0.3s ease infinte;
+    
+}
+ 
+#main {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 200px 200px 200px;
+    box-shadow:black 0px 0px;
+  }
+.box {
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.072);
+    margin: 5vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform:scale(1);
+  }
+.box:hover {
+    transform: scale(1.03);
+    transition: 0.4s ease;
+
+}  

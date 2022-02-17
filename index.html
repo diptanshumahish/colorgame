@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Color Game(Hackoverflow-Assignment 1)</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap"
+      rel="stylesheet"/>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="toptext">THE GREAT</div>
+      <div class="rgb"></div>
+      <div class="=toptext">&nbspCOLOR GAME.</div>
+    </div>
+    <div class="mainbar">
+      <button class="leftText" onclick="window.location.reload()">
+        NEW GAME
+      </button>
+      <div class="menu">
+        <button onclick="setState(3)"class="rightText">EASY&nbsp</button>
+        <button onclick="setState(6)"class="rightText">HARD</button>
+      </div>
+    </div>
+    <div id="main">
+
+    </div>
+
+    <script src="app.js"></script>
+  </body>
 </html>
