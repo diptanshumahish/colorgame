@@ -103,17 +103,19 @@ body {
   width: 100px;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.072);
-  margin: 7vh;
+  margin: 5vh;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transform: scale(1);
 }
 .box:hover {
   transform: scale(1.09);
   transition: 1.7s ease;
+  box-shadow: rgba(255, 255, 255, 0.5) 0px 5px 15px;
 }
 .box:active{
   transform:scale(0.8);
   transition:0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
 }
 #win {
   text-align: center;
@@ -138,7 +140,7 @@ body {
   background-color:#bd98a546; 
   border-radius:4px;
   margin:20%;
-  color: white;
+  color: rgb(204, 185, 185);
   border: none;
   padding: 0;
   cursor: pointer;
@@ -147,12 +149,13 @@ body {
   align-items: center;
   transform:scale(1);
   font-size:1.4rem;
+  font-weight: bold;
   
 }
 .play:hover{
-    color:#151618;
+    color:#ffffff;
     transition:1s ease all;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
 
 }
 .play:active{
