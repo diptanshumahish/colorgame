@@ -26,12 +26,14 @@ body {
   text-align: center;
   color: white;
   font-weight: 2px;
-  font-size: 35px;
+  font-size: 2em;
   letter-spacing: 10px;
   background-color: #bd98a546;
   border-radius: 1rem;
   margin-bottom: 10px;
-  height: 20vh;
+  height: fit-content;
+  width:vw;
+  /* display:block; */
 }
 .mainbar {
   display: flex;
@@ -39,7 +41,7 @@ body {
   background-color: #bd98a546;
   border-radius: 10px;
   margin: 10px;
-  height: 5vh;
+  height:fit-content;
 }
 .rgb {
   font-weight: bold;
@@ -61,7 +63,7 @@ body {
   transition: 0.3s ease infinte;
 }
 .rightText {
-  font-size: 30px;
+  font-size:2rem;
   background: none;
   color: white;
   border: none;
@@ -79,8 +81,9 @@ body {
   display: grid;
   justify-content: center;
   align-content: center;
-  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr; */
   grid-template-columns: 200px 200px 200px;
+  grid-gap:1fr 1fr;
   box-shadow: black 0px 0px;
 }
 .box {
@@ -89,13 +92,17 @@ body {
   width: 100px;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.072);
-  margin: 5vh;
+  margin: 7vh;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transform: scale(1);
 }
 .box:hover {
   transform: scale(1.09);
   transition: 1.7s ease;
+}
+.box:active{
+  transform:scale(0.8);
+  transition:0.3s ease;
 }
 #win {
   text-align: center;
@@ -118,24 +125,27 @@ body {
 }
 .play {
   background-color:#bd98a546; 
-  border-radius:10px;
-  margin: 20px;
+  border-radius:4px;
+  margin:20%;
   color: white;
   border: none;
   padding: 0;
   cursor: pointer;
   letter-spacing: 2px;
-  
-  font-size: 40px;
-  
-  
+  display:flex;
+  align-items: center;
   transform:scale(1);
+  font-size:1.4rem;
   
 }
 .play:hover{
     color:#151618;
     transition:1s ease all;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.play:active{
+  transform:scale(0.7);
 }
 #again{
   margin-left:40%;
@@ -143,5 +153,4 @@ body {
   display:flex;
   justify-content:center;
   align-items:center;
-
 }
