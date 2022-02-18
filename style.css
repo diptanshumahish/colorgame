@@ -56,11 +56,16 @@ body {
   cursor: pointer;
   letter-spacing: 2px;
   font-weight: bold;
+  transform:scale(1);
 }
 .leftText:hover {
   color: rgba(0, 0, 0, 0.623);
   font-weight: bold;
   transition: 0.3s ease infinte;
+}
+.leftText:active{
+  transform:scale(0.96);
+  transition:0.2s;
 }
 .rightText {
   font-size:2rem;
@@ -70,11 +75,17 @@ body {
   padding: 0;
   cursor: pointer;
   font-weight: bold;
+  transform:scale(1);
 }
 .rightText:hover {
   color: rgba(0, 0, 0, 0.623);
   font-weight: bold;
-  transition: 0.3s ease infinte;
+  transition: 0.3s ;
+  
+}
+.rightText:active{
+  transform:scale(0.94);
+  transition: 0.3s ease
 }
 
 #main {
@@ -83,7 +94,7 @@ body {
   align-content: center;
   /* grid-template-columns: 1fr 1fr 1fr; */
   grid-template-columns: 200px 200px 200px;
-  grid-gap:1fr 1fr;
+
   box-shadow: black 0px 0px;
 }
 .box {
